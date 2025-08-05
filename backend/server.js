@@ -10,7 +10,7 @@ mongoose.connect(process.env.MONGO_URI)
 .catch(err => console.log("MongoDB conncetion failed " , err));
 
 app.use(cors({
-    origin: ["http://localhost:5173", "https://your-netlify-url.netlify.app"], // ✅ Add both dev and deployed frontend
+    origin: ["http://localhost:5173", "https://fancy-valkyrie-6bed63.netlify.app/"], 
     credentials: true
 }));
 
